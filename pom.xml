@@ -16,7 +16,7 @@
 		<!-- Mule runtime (CloudHub 2.0 Free Trial – edge/java17) -->
 		<app.runtime>4.10.1</app.runtime>
 		<!-- Mule Maven plugin -->
-		<mule.maven.plugin.version>4.3.0</mule.maven.plugin.version>
+		<mule.maven.plugin.version>4.6.0</mule.maven.plugin.version>
 		<!-- CH2 deploy props -->
 		<deployment.env>Sandbox</deployment.env>
 		<deployment.target>Cloudhub-US-East-2</deployment.target>
@@ -53,15 +53,7 @@
 	</pluginRepositories>
 	<!-- CRUCIAL: distributionManagement so "mvn deploy" publishes to Exchange -->
 	<distributionManagement>
-		<repository>
-			<!-- 🔹 MUST match <server><id>Repository</id> in settings.xml -->
-			<id>Repository</id>
-			<name>Exchange Repository</name>
-			<url>https://maven.anypoint.mulesoft.com/api/v3/organizations/0c4b9b4a-4a19-4ade-a03d-b1c28cb18fe5/maven</url>
-			<layout>default</layout>
-		</repository>
-	</distributionManagement>
-
+		
 	<build>
 		<plugins>
 			<plugin>
