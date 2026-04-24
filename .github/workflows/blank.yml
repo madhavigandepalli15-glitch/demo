@@ -1,0 +1,26 @@
+name: MuleSoft CI/CD
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 8
+
+      - name: Build Mule App
+        run: mvn clean package
+
+      - name: Deploy Mule App
+        run: mvn clean deploy
