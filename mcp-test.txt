@@ -1,1 +1,2 @@
 MCP POC test
+This change is for testing GitHub MCP.
