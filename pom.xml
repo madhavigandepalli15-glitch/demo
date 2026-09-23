@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <!-- Project Information -->
-    <groupId>0c4b9b4a-4a19-4ade-a03d-b1c28cb18fe5</groupId>
+    <groupId>cfb23ec6-7e3d-4759-81ae-250eb9686003</groupId>
     <artifactId>jenkins-cicd</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>mule-application</packaging>
@@ -39,7 +39,7 @@
             <id>anypoint-exchange-v3</id>
             <name>Anypoint Exchange</name>
             <url>
-                https://maven.anypoint.mulesoft.com/api/v3/organizations/0c4b9b4a-4a19-4ade-a03d-b1c28cb18fe5/maven
+                https://maven.anypoint.mulesoft.com/api/v3/organizations/cfb23ec6-7e3d-4759-81ae-250eb9686003/maven
             </url>
         </repository>
 
