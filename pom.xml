@@ -115,10 +115,9 @@
 
                         <target>${deployment.target}</target>
 
-                        <!-- Credentials should normally come from
-                             GitHub Actions secrets -->
-                        <username>${anypoint.username}</username>
-                        <password>${anypoint.password}</password>
+                       <connectedAppClientId>${anypoint.client.id}</connectedAppClientId>
+<connectedAppClientSecret>${anypoint.client.secret}</connectedAppClientSecret>
+<connectedAppGrantType>client_credentials</connectedAppGrantType>
 
                         <!-- Application Name -->
                         <applicationName>${project.artifactId}</applicationName>
