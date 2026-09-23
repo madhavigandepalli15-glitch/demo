@@ -1,3 +1,4 @@
+```yaml
 name: MuleSoft CI/CD
 
 on:
@@ -18,9 +19,11 @@ jobs:
         with:
           distribution: temurin
           java-version: 8
+          cache: maven
 
       - name: Build Mule App
-        run: mvn clean package
+        run: mvn clean package -e
 
       - name: Deploy Mule App
-        run: mvn clean deploy
+        run: mvn clean deploy -DmuleDeploy
+```
